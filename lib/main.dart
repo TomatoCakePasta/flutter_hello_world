@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
+// Entry point
 void main() {
+  // Run the Root Widget
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // MaterialApp Widget
+  // Define basic init information and structure of the app
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +31,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: const Text('Home'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: Center(
